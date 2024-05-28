@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 
 import Logo from '../Header/Logo'
 import Menu from '../Header/Menu'

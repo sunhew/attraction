@@ -1,5 +1,5 @@
 import React from 'react'
-import { headerMenus, searchKeyword, snsLink } from '../../data/menu'
+import { headerMenus, searchKeyword } from '../../data/menu'
 import { Link } from 'react-router-dom'
 
 const Menu = () => {

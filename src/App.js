@@ -8,6 +8,7 @@ import SearchPage from './pages/SearchPage';
 import VideoPage from './pages/VideoPage';
 import ChannelPage from './pages/ChannelPage';
 import Header from './components/section/Header';
+import Footer from './components/section/Footer';
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/search' element={<SearchPage />} />
-        <Route path='/Video' element={<VideoPage />} />
-        <Route path='/Channel' element={<ChannelPage />} />
+        <Route path='/search/:searchID' element={<SearchPage />} />
+        <Route path='/video/:videoID' element={<VideoPage />} />
+        <Route path='/channel/:channelID' element={<ChannelPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
