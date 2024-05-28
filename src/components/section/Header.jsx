@@ -1,8 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+
+import Logo from '../Header/Logo'
+import Menu from '../Header/Menu'
+import Sns from '../Header/Sns'
 
 const Header = () => {
     return (
-        <div>Header</div>
+        <header id='header' role='banner'>
+            <Logo />
+            <Menu />
+            <Sns />
+        </header>
     )
 }
 
