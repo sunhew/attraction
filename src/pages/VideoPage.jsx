@@ -62,7 +62,7 @@ const VideoPage = () => {
                                         playing={true}
                                         url={`https://www.youtube.com/watch?v=${videoID}`}
                                         width='100%'
-                                        // height='100vh'
+                                        height='70vh'
                                         style={{ poasition: 'absolute', top: 0, left: 0 }}
                                     />
                                 </div>
@@ -72,7 +72,7 @@ const VideoPage = () => {
                                         <ul>
                                             {comments.map(comment => (
                                                 <li key={comment.id}>
-                                                    <p><strong>{comment.snippet.topLevelComment.snippet.authorDisplayName}:</strong> {comment.snippet.topLevelComment.snippet.textDisplay}</p>
+                                                    <p dangerouslySetInnerHTML={{ __html: comment.snippet.topLevelComment.snippet.textDisplay }} />
                                                 </li>
                                             ))}
                                         </ul>
