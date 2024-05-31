@@ -57,15 +57,13 @@ const VideoPage = () => {
                     <section id='videoPage' className='fade-in'>
                         <div className='video__detail'>
                             <div className='video__play'>
-                                <div className='left'>
-                                    <ReactPlayer
-                                        playing={true}
-                                        url={`https://www.youtube.com/watch?v=${videoID}`}
-                                        width='100%'
-                                        height='70vh'
-                                        style={{ poasition: 'absolute', top: 0, left: 0 }}
-                                    />
-                                </div>
+                                <ReactPlayer
+                                    playing={true}
+                                    url={`https://www.youtube.com/watch?v=${videoID}`}
+                                    width='100%'
+                                    height='70vh'
+                                    style={{ poasition: 'absolute', top: 0, left: 0 }}
+                                />
                                 <div className='right'>
                                     <h3>Comments</h3>
                                     {comments.length > 0 ? (

@@ -21,6 +21,7 @@ components
 - sass 설치 `npm install sass` : CSS 라이브러리
 - react-helmet-asyne 설치 `npm install react-helmet-async` : SEO
 - swiper 설치 `npm install swiper` : 이미지 슬라이트
+- swiper 설치 `npm install --save-dev @babel/plugin-proposal-private-property-in-object` : 이미지 슬라이트
 - rafce(리액트에서 사용할 것 임), rafc(넥스트 js에서 사용 예정) 의 차이점: 임포트등을 자동으로 만들어지는 단축키
 - `npm start` : 실행 명령어
 - <></> 빈 박스가 생기지 않도록 가상으로 묶는 방법
