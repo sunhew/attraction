@@ -4,7 +4,7 @@ const Logo = () => {
     return (
         <h1 className='header__logo'>
             <a href="/">
-                <span>밴드 플레이 리스트<br /><i>Youtube</i></span>
+                <span>다양한 음식 레시피<br /><i>Youtube</i></span>
             </a>
         </h1>
     )

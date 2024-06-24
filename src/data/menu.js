@@ -3,111 +3,89 @@ import { PiYoutubeLogo } from "react-icons/pi";
 import { PiCodepenLogoDuotone } from "react-icons/pi";
 import { PiInstagramLogo } from "react-icons/pi";
 
-import { MdLocalPlay } from "react-icons/md";
-import { GiRose } from "react-icons/gi";
-import { SiRiotgames } from "react-icons/si";
-import { GiGuitarBassHead } from "react-icons/gi";
-import { SiBandlab } from "react-icons/si";
-import { PiPlaylistBold } from "react-icons/pi";
-import { PiPlaylistFill } from "react-icons/pi";
-import { HiMicrophone } from "react-icons/hi2";
-import { PiMicrophoneStageFill } from "react-icons/pi";
+import { GiRiceCooker } from "react-icons/gi";
+import { IoFastFoodOutline } from "react-icons/io5";
+import { FaBowlRice } from "react-icons/fa6";
+import { PiBowlFood } from "react-icons/pi";
+import { MdOutlineEventNote } from "react-icons/md";
+import { GiNotebook } from "react-icons/gi";
+import { LuDessert } from "react-icons/lu";
+import { SlNote } from "react-icons/sl";
+import { GiFruitBowl } from "react-icons/gi";
 
 export const headerMenus = [
     {
-        title: "루시",
-        icon: <MdLocalPlay />,
-        src: "/Search/루시"
+        title: "한식 레시피",
+        icon: <GiRiceCooker />,
+        src: "/Search/한식 레시피"
     },
     {
-        title: "이승윤",
-        icon: <GiRose />,
-        src: "/Search/bgsmsyl"
+        title: "양식 레시피",
+        icon: <IoFastFoodOutline />,
+        src: "/Search/양식 레시피"
     },
     {
-        title: "QWER",
-        icon: <SiRiotgames />,
-        src: "/Search/qwer"
+        title: "일식 레시피",
+        icon: <FaBowlRice />,
+        src: "/Search/일식 레시피"
     },
     {
-        title: "씨엔블루",
-        icon: <GiGuitarBassHead />,
-        src: "/Search/cNBLUE"
+        title: "중식 레시피",
+        icon: <PiBowlFood />,
+        src: "/Search/중식 레시피"
     },
     {
-        title: "알레프",
-        icon: <HiMicrophone />,
-        src: "/Search/ALEPH"
+        title: "디저트 레시피",
+        icon: <LuDessert />,
+        src: "/Search/디저트 레시피"
     },
     {
-        title: "소년:달",
-        icon: <PiMicrophoneStageFill />,
-        src: "/Search/Boymoon"
+        title: "해외 레시피",
+        icon: <MdOutlineEventNote />,
+        src: "/Search/해외 레시피"
     },
     {
-        title: "TOUCHED",
-        icon: <PiMicrophoneStageFill />,
-        src: "/Search/TOUCHED"
+        title: "추천 레시피",
+        icon: <GiNotebook />,
+        src: "/Search/추천 레시피"
     },
     {
-        title: "ONEWE",
-        icon: <PiMicrophoneStageFill />,
-        src: "/Search/Onewe"
+        title: "오늘 뭐 먹지?",
+        icon: <SlNote />,
+        src: "/Search/오늘 뭐 먹지?"
     },
     {
-        title: "국내 인디밴드",
-        icon: <SiBandlab />,
-        src: "/Search/인디밴드"
-    },
-    {
-        title: "오늘의 추천 음악",
-        icon: <PiPlaylistBold />,
-        src: "/Search/오늘의 추천 음악"
-    },
-    {
-        title: "추천영상",
-        icon: <PiPlaylistFill />,
-        src: "/Search/추천영상"
+        title: "과일 디저트",
+        icon: <GiFruitBowl />,
+        src: "/Search/과일 디저트"
     },
 ]
 
 export const searchKeyword = [
     {
-        title: "LUCY",
-        src: "/Search/LUCY"
+        title: "디저트",
+        src: "/Search/디저트"
     },
     {
-        title: "이승윤",
-        src: "/Search/이승윤"
+        title: "요리 레시피",
+        src: "/Search/요리 레시피"
     },
     {
-        title: "QWER",
-        src: "/Search/qwer"
+        title: "노오븐 레시피",
+        src: "/Search/노오븐 레시피"
     },
     {
-        title: "CNBLUE",
-        src: "/Search/cnblue"
+        title: "3분요리",
+        src: "/Search/3분요리"
     },
     {
-        title: "밝은 테마",
-        src: "/Search/Light"
+        title: "간단 레시피",
+        src: "/Search/간단 레시피"
     },
     {
-        title: "잔잔한 테마",
-        src: "/Search/Still"
+        title: "한국 전통음식",
+        src: "/Search/한국 전통음식"
     },
-    {
-        title: "신나는 테마",
-        src: "/Search/Exciting"
-    },
-    {
-        title: "어두운 테마",
-        src: "/Search/dark"
-    },
-    {
-        title: "최신 곡",
-        src: "/Search/latest_song"
-    }
 ]
 
 export const snsLink = [

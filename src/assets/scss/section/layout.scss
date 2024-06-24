@@ -5,21 +5,22 @@
     width: 260px;
     height: 100%;
     z-index: 10000;
-    background-color: #333;
-    // overflow-y: scroll;
+    background-color: #7a8489;
+    transition: all 0.6s;
 }
 
 #main {
     max-width: 2000px;
-    min-height: calc(100vh - 67px);
+    min-height: 100vh;
     margin: 0 auto;
     padding-left: 260px;
     background-color: #111;
+    position: relative;
+
 }
 
 #footer {
     text-align: center;
-    background-color: #111;
     padding: 20px 20px 20px 260px;
 }
 
@@ -37,7 +38,7 @@
     padding: 40px;
 
     h2 {
-        margin-bottom: 0.6rem 0;
+        margin-bottom: 1rem;
         font-size: 1.25rem;
     }
 }
@@ -45,6 +46,7 @@
 @media (max-width: 960px) {
     #header {
         left: -260px;
+        transition: all 0.6s;
     }
 
     #main {
@@ -64,9 +66,5 @@
     #RecommendedMusic,
     #Recommended {
         padding: 20px;
-
-        h2 {
-            margin-bottom: 0.6rem;
-        }
     }
 }

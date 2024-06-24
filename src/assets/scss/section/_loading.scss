@@ -1,6 +1,6 @@
 $loader-count: 6;
 $loader-proportion: 200px;
-$loader-color: #a3e7ed;
+$loader-color: #5dbda2;
 $stagger: 0.1875s;
 $animation_config: (
     name: swoosh,
@@ -26,6 +26,7 @@ $animation_config: (
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    padding-left: 260px;
 
     svg {
         position: relative;
@@ -40,11 +41,11 @@ $animation_config: (
             fill: $loader-color;
         }
     }
-}
 
-@for $i from 1 through $loader-count {
-    .loading circle:nth-of-type(#{$i}) {
-        animation-delay: $i * $stagger;
-        fill: lighten($loader-color, $i * 3%);
+    @for $i from 1 through $loader-count {
+        .loading circle:nth-of-type(#{$i}) {
+            animation-delay: $i * $stagger;
+            fill: lighten($loader-color, $i * 3%);
+        }
     }
 }

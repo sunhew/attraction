@@ -6,8 +6,8 @@ import '../assets/scss/style.scss';
 const Home = () => {
     return (
         <Main
-            title="밴드 플레이리스트"
-            description="국내 인디밴드 페이지 입니다."
+            title="음식 레시피 사이트"
+            description="음식 레시피 사이트 입니다."
         >
         </Main>
     );
