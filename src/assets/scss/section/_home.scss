@@ -59,6 +59,7 @@ body {
     .recipes {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 150px;
 
         .recipe-card {
             background-color: var(--light-color);
