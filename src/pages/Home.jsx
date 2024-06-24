@@ -10,7 +10,7 @@ const Home = () => {
         >
             <section className="intro">
                 <h2>맛있는 레시피에 오신 것을 환영합니다</h2>
-                <p>전 세계의 놀라운 레시피를 찾을 수 있는 최고의 장소입니다.</p>
+                <p>전 세계의 맛있는 레시피를 찾을 수 있는 최고의 사이트 입니다.</p>
             </section>
             <section className="featured-recipes">
                 <h2>추천 레시피</h2>
