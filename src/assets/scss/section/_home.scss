@@ -8,14 +8,147 @@
 
 :root {
     --dark-color: #000;
+    --light-color: #fff;
+    --primary-color: #ff6347;
+    --secondary-color: #ffa07a;
 }
 
 body {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #111;
-    // overflow: hidden;
-    perspective: 1000px;
+    font-family: 'Arial, sans-serif';
+    background-color: #282828;
+    color: var(--light-color);
+    overflow-x: hidden;
+}
+
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+
+    h2 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        animation: slideIn 1s ease-in-out forwards;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: var(--secondary-color);
+        animation: slideIn 1s ease-in-out forwards 0.5s;
+    }
+}
+
+.featured-recipes {
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease-in-out forwards 1s;
+    }
+
+    .recipes {
+        display: flex;
+        justify-content: space-between;
+
+        .recipe-card {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 30%;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: slideUp 1s ease-in-out forwards;
+
+            h3 {
+                font-size: 1.5rem;
+                margin: 15px 0;
+                color: var(--dark-color);
+            }
+
+            &:nth-child(2) {
+                animation-delay: 0.5s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 1s;
+            }
+        }
+    }
+}
+
+.user-reviews {
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease-in-out forwards 1.5s;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: space-around;
+
+        .review {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 45%;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: slideUp 1s ease-in-out forwards 2s;
+
+            p {
+                font-size: 1rem;
+                color: var(--dark-color);
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-size: 0.9rem;
+                color: var(--secondary-color);
+            }
+
+            &:nth-child(2) {
+                animation-delay: 2.5s;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
