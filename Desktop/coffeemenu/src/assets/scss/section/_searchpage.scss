@@ -1,0 +1,27 @@
+
+    
+
+.search__header {
+    width: 95%;
+    clear: both;
+    word-wrap: break-word;
+    display: flex;
+    background-color: var(--white);
+    font-size: 1.8rem;
+    margin: 40px auto;
+    padding: 60px;
+
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-position: under;
+        em {
+            font-size: 1.7rem;
+            
+        }
+      
+    }
+}

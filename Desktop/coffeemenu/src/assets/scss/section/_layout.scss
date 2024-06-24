@@ -1,0 +1,75 @@
+body {
+    background-color: var(--white100);
+}
+#header {
+    position: sticky;
+    top: -192px;
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    z-index: 20000;
+    padding-top: 1px;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: var(--white100);
+}
+
+#footer {
+    text-align: center;
+    background-color: #4b4e51;
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 120px 0;
+}
+
+#commend,
+#handdrip,
+#caffe,
+#chain,
+#bakery,
+#special,
+#beans {
+    padding: 40px;
+
+    h2 {
+        margin: 0 0.6rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width:960px) {
+    #header {
+        left: -260px;
+    }
+
+    #main {
+        padding-left: 0;
+        margin-top: 100px;
+    }
+
+    #commend,
+    #handdrip,
+    #caffe,
+    #chain,
+    #bakery,
+    #special,
+    #beans {
+        padding: 20px;
+
+        h2 {
+            margin: 0 0.6rem;
+            font-size: 1.25rem;
+        }
+    }
+
+}
