@@ -33,7 +33,7 @@ const SearchPage = () => {
 
     const loadMoreVideos = async () => {
         try {
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchID}&pageToken=${nextPageToken}&key=${process.env.REACT_APP_YOUTUBE_API_KEY_TO} `)
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchID}&pageToken=${nextPageToken}&key=${process.env.REACT_APP_YOUTUBE_API_KEY} `)
             const data = await response.json();
             setVideos(prevVideos => [...prevVideos, ...data.items]);
             setNextPageToken(data.nextPageToken);

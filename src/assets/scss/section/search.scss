@@ -3,9 +3,10 @@
     width: 100%;
     height: 80px;
     padding: 17px 40px;
-    border-bottom: 1px solid var(--black200);
-    background-color: #41414167;
+    // border-bottom: 1px solid var(--black200);
+    background-color: #111;
     backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 label {

@@ -6,6 +6,7 @@
 @import "setting/resets.scss";
 @import "setting/mixin.scss";
 @import "setting/common.scss";
+@import "setting/animesion.scss";
 
 // section
 @import "section/layout.scss";
@@ -15,3 +16,4 @@
 @import "section/__swiper.scss";
 @import "section/channel.scss";
 @import "section/loading";
+@import "section/home";
